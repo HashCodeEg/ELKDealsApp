@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.elkdeals.mobile.activities.BiddingListActivity">
+    <LinearLayout
+        android:id="@+id/timerLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_3sdp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/newTimer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/timeToStOrFinTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:visibility="gone"
+            android:id="@+id/bidsNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/darkGray"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/biddingList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/yesNoLine"
+            android:layout_weight="1"></ListView>
+
+        <LinearLayout
+            android:id="@+id/yesNoLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#ddd"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/noBtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/auc_rec2"
+                android:text="لا"
+                android:textColor="@color/bluerdWhite"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/yesBtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/auc_rec2"
+                android:text="نعم"
+                android:textColor="@color/bluerdWhite"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:text="هل تريد المزايدة مرة اخرى"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/minMaxLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/minusBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
+                    android:layout_weight=".2"
+                    android:background="@drawable/orange_rec"
+                    android:text="-"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_20sdp" />
+
+                <EditText
+                    android:id="@+id/valueEdx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/auc_rec2"
+                    android:hint="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:padding="@dimen/_5sdp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:id="@+id/plusBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_weight=".2"
+                    android:background="@drawable/orange_rec"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_20sdp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addPriceBtn"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/auc_rec2"
+                android:text="تـــــــأكيد"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/rateUs"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/auc_rec2"
+            android:text="رأيك يهمنـــــا"
+            android:textColor="@color/bluerdWhite"
+            android:textSize="@dimen/_15sdp" />
+        <TextView
+            android:id="@+id/msgTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valueEdx"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

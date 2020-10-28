@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom">
+        <attr name="swipeable" format="boolean" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+        <attr name="border_width_secondary" format="dimension" />
+        <attr name="border_color_secondary" format="color" />
+        <attr name="border_overlay_secondary" format="boolean" />
+        <attr name="fill_color" format="color" />
+        <attr name="circle_background_color" format="color" />
+        <attr name="foreground_color" format="color" />
+        <attr name="corner_radius_custom" format="dimension" />
+        <!--左上圆角大小-->
+        <attr name="leftTop_corner_radius" format="dimension" />
+        <!--右上圆角大小-->
+        <attr name="rightTop_corner_radius" format="dimension" />
+        <!--左下圆角大小-->
+        <attr name="leftBottom_corner_radius" format="dimension" />
+        <!--右下圆角大小-->
+        <attr name="rightBottom_corner_radius" format="dimension" />
+        <!--图片类型：圆角或者圆形-->
+        <attr name="type" format="enum">
+            <enum name="oval" value="2" />
+            <enum name="round" value="1" />
+            <enum name="circle" value="0" />
+        </attr>
+        <attr name="capitailize_first_letter" format="boolean" />
+        <!--
+        flFlow	boolean	true to allow flow. false to restrict all child views in one row. The default is true.
+flChildSpacing	auto/dimension	The horizontal spacing between child views. Either auto, or a fixed size. The default is 0dp.
+flChildSpacingForLastRow	auto/ align/
+dimension	The horizontal spacing between child views of the last row. Either auto, align or a fixed size. If not set, childSpacing will be used instead.
+flRowSpacing	auto/dimension	The vertical spacing between rows. Either auto, or a fixed size. The default is 0dp.
+flRtl	boolean	true to layout child views from right to left. false to layout from left to right. The default is false.
+flMaxRows	integer	The maximum height of FlowLayout in terms of number of rows.
+auto means that the actual spacing is calculated as per the size of the FlowLayout and the number of child views (or rows), so that the child views (or rows) are placed evenly.
+
+align in childSpacingForLastRow means that the horizontal spacing of the child views in the last row keeps the same with the spacing used in the row above. If there is only one row in FlowLayout and the childSpacingForLastRow is set to align, this value is ignored and the actual spacing is calculated using childSpacing.
+        -->
+        <attr name="lineMargin" format="dimension" />
+        <attr name="tagMargin" format="dimension" />
+        <attr name="textPaddingLeft" format="dimension" />
+        <attr name="textPaddingRight" format="dimension" />
+        <attr name="textPaddingTop" format="dimension" />
+        <attr name="textPaddingBottom" format="dimension" />
+        <attr name="flFlow" format="boolean" />
+        <attr name="flChildSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flMinChildSpacing" format="dimension" />
+        <attr name="flChildSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+            <enum name="align" value="-65537" />
+        </attr>
+        <attr name="flRowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flRtl" format="boolean" />
+        <attr name="flMaxRows" format="integer" />
+        <attr name="flRowVerticalGravity" format="enum">
+            <enum name="auto" value="-65536" />
+            <enum name="top" value="0x30" />
+            <enum name="center" value="0x10" />
+            <enum name="bottom" value="0x50" />
+        </attr>
+        <attr name="android:gravity" />
+
+    </declare-styleable>
+</resources>

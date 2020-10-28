@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    tools:background="@color/blue">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/round_cart_no_border"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/fill_your_information"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/colorPrimarySecondary"
+                android:textSize="@dimen/_10sp" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/input"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:autofillHints="@string/fullname"
+                android:background="@drawable/edit_information_input"
+                android:hint="@string/fullname"
+                android:inputType="textPersonName"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/id_number"
+                style="@style/input"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="@string/id_number"
+                android:background="@drawable/edit_information_input"
+                android:hint="@string/id_number"
+                android:inputType="number"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/input"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="@string/email"
+                android:background="@drawable/edit_information_input"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/mobile"
+                style="@style/input"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="@string/mobile"
+                android:background="@drawable/edit_information_input"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/city"
+                style="@style/input"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="@string/city"
+                android:background="@drawable/edit_information_input"
+                android:hint="@string/city"
+                android:inputType="text"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/address"
+                style="@style/input"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="@string/address"
+                android:background="@drawable/edit_information_input"
+                android:hint="@string/address"
+                android:inputType="text"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/edit_information_buuton"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="@dimen/_25sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

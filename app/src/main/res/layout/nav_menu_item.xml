@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-medium"
+    android:gravity="start"
+    android:paddingStart="@dimen/_60sdp"
+    android:paddingTop="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_6sdp"
+    android:paddingBottom="@dimen/_12sdp"
+    android:text="login"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_16sp"
+    tools:background="@color/black" />

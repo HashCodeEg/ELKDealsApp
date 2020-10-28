@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:background="@drawable/round_rectangel_shadow_textview"
+    android:paddingStart="@dimen/_50sdp"
+    android:paddingTop="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_50sdp"
+    android:paddingBottom="@dimen/_16sdp">
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start"
+        android:text="@string/phone"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:textColor="#2A3964"
+        android:textSize="@dimen/_14sp"
+        android:padding="@dimen/_4sdp"/>
+
+    <CheckBox
+        android:id="@+id/category_check"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:visibility="gone" />
+</androidx.appcompat.widget.LinearLayoutCompat>

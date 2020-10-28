@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.islam.slider.Tricks.InfiniteViewPager
+            android:id="@+id/islam_slider_viewpager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toTopOf="parent" />
+
+        <com.islam.slider.Indicators.PagerIndicator
+            android:id="@+id/alter_center_bottom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            custom:border_color="@android:color/white"
+            custom:border_width="0dp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toTopOf="parent"
+            custom:layout_constraintVertical_bias="1.0"
+            custom:shape="oval"
+            custom:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/islam_slider_next"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="@dimen/_12sdp"
+            tools:background="#33000000"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintRight_toRightOf="parent"
+            custom:layout_constraintTop_toTopOf="parent"
+            custom:srcCompat="@drawable/ic_next_slide" />
+
+        <ImageView
+            android:id="@+id/islam_slider_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            tools:background="#33000000"
+            android:padding="@dimen/_12sdp"
+            custom:layout_constraintBottom_toBottomOf="parent"
+            custom:layout_constraintLeft_toLeftOf="parent"
+            custom:layout_constraintTop_toTopOf="parent"
+            custom:srcCompat="@drawable/ic_previous_slide" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.islam.slider.Indicators.PagerIndicator
+        android:id="@+id/default_center_bottom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        custom:visibility="invisible"
+        custom:border_width="@dimen/_1sdp"
+        custom:shape="oval" />
+</androidx.appcompat.widget.LinearLayoutCompat>

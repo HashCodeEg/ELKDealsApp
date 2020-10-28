@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "168053197784",
+    "firebase_url": "https://elk-deals-e1752.firebaseio.com",
+    "project_id": "elk-deals-e1752",
+    "storage_bucket": "elk-deals-e1752.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168053197784:android:6818cdb890530ac4",
+        "android_client_info": {
+          "package_name": "com.elkdeals.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168053197784-guuo42elfo9fqer2hple6cn4evj75lc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt8GyN3S7daN8-5A247DUW1OYm8frby84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

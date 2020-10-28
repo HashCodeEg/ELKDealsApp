@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLinear"
+    android:layoutDirection="ltr"
+    android:padding="@dimen/_2sdp"
+    android:background="@color/bluerdWhite"
+    android:orientation="vertical">
+    <TextView
+        android:visibility="gone"
+        android:padding="@dimen/_5sdp"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="#ddd"
+        android:id="@+id/cashTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:text="@string/price_will_send"
+        android:textColor="@color/red" />
+    <TextView
+
+        android:id="@+id/ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:text="@string/price_will_send"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/sentPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sentPriceBtn"
+        android:layout_width="@dimen/_140sdp"
+        android:gravity="center"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/auc_rec2"
+        android:padding="10dp"
+        android:text="@string/confirm"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@id/infoImg"
+        android:layout_margin="2dp"
+        android:background="@drawable/in"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp" />
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        tools:context=".fragments.store.Products">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.islam.slider.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    app:indicator_visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:show_arrows="false"
+                    tools:background="@color/black" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_search_gradient"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/slider">
+
+                    <EditText
+                        android:id="@+id/search_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:focusableInTouchMode="true"
+                        android:imeActionLabel="@string/search"
+                        android:imeOptions="actionSearch"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="#7c7c7c"
+                    app:layout_constraintBottom_toBottomOf="@+id/categories_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/categories_label" />
+
+                <TextView
+                    android:id="@+id/categories_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="@dimen/_6sdp"
+                    android:text="Most Selling"
+                    android:textColor="@color/colorPrimaryDarkAuctions"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categories_label"
+                tools:itemCount="14"
+                tools:layoutManager="GridLayoutManager"
+                tools:listitem="@layout/recycler_product"
+                tools:spanCount="2" />
+
+            <include layout="@layout/error"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+            <include layout="@layout/empty"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:clickable="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/gray" >
+
+        <LinearLayout
+            android:id="@+id/sort_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sort"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:clickable="false"
+                android:tint="@color/colorPrimaryDarkAuctions"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/sort_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:text="@string/Newest"
+                android:textSize="16sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondaryDark"
+                android:gravity="start|center_vertical" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/layout_toggleBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:textOff=""
+            android:textOn=""
+            android:checked="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/toggle_ic_view" />
+
+        <ToggleButton
+            android:id="@+id/filterBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:textOff=""
+            android:textOn=""
+            android:checked="false"
+            android:layout_margin="10dp"
+            android:background="@drawable/toggle_ic_filter" />
+
+    </LinearLayout>
+
+</LinearLayout>

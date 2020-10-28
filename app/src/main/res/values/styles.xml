@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1E387E</item>
+        <item name="colorPrimaryDark">#64000000</item>
+        <item name="colorAccent">#52C1FF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Store" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#E97F1E</item>
+        <item name="colorPrimaryDark">#56240B</item>
+        <item name="colorAccent">#FED404</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Auctions" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#E91E63</item>
+        <item name="colorPrimaryDark">#560B22</item>
+        <item name="colorAccent">@color/colorAccentAuctions</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Requests" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1E387E</item>
+        <item name="colorPrimaryDark">#121B34</item>
+        <item name="colorAccent">#52C1FF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">#1E387E</item>
+        <item name="colorPrimaryDark">#121B34</item>
+        <item name="colorAccent">#1E387E</item>
+
+    </style>
+
+    <style name="button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#e5e5e5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#00B1D8</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="customdialog" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="account_data_label">
+
+        <item name="android:layout_width">@dimen/_120sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingStart">@dimen/_4sdp</item>
+        <item name="android:paddingEnd">@dimen/_4sdp</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_10sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:background">@drawable/round_corners</item>
+    </style>
+
+    <style name="account_data">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#00B1D8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+    </style>
+
+</resources>

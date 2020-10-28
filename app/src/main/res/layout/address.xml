@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/hint_text_color"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/edit_information_input" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/hint_text_color"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />
+            
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/hint_text_color"
+                android:drawableStart="@drawable/ic_directions"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/country"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/hint_text_color"
+                android:drawableStart="@drawable/ic_public"
+                android:drawableEnd="@drawable/ic_chevron_down"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/zone"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/hint_text_color"
+                android:drawableStart="@drawable/ic_flag"
+                android:drawableEnd="@drawable/ic_chevron_down"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />
+
+            <!--<EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/state"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorSecondaryLight"
+                android:drawableStart="@drawable/ic_map"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />-->
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="المنطقة"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/hint_text_color"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />
+
+            <EditText
+                android:id="@+id/postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:inputType="number"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/hint_text_color"
+                android:drawableStart="@drawable/ic_my_location"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />
+
+            <!--<EditText
+                android:id="@+id/suburb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/suburb"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textColorSecondary"
+                android:textColorHint="@color/textColorSecondaryLight"
+                android:drawableStart="@drawable/ic_near"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" />-->
+
+
+            <LinearLayout
+                android:id="@+id/default_shipping_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_information_input" >
+
+                <CheckBox
+                    android:id="@+id/default_shipping_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_shipping"
+                    android:textColor="@color/textColorSecondary"
+                    android:textColorHighlight="@color/colorAccentRequests"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/save_address_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/colorAccentRequests" />
+
+    </LinearLayout>
+
+</LinearLayout>

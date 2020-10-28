@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    tools:showIn="@layout/fragment_bills">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_cart_no_border"
+        android:paddingStart="@dimen/_25sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_25sdp"
+        app:layout_constraintBottom_toTopOf="@+id/view_helper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bill_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/bill_number"
+            android:textAlignment="viewStart"
+            android:textColor="#7F7F7F"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bill_id" />
+
+        <TextView
+            android:id="@+id/bill_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="start"
+            android:text="52652"
+            android:textAlignment="viewStart"
+            android:textColor="#00B1D8"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toStartOf="@+id/bill_remove"
+            app:layout_constraintStart_toEndOf="@+id/bill_id_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/product_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/product_title"
+            android:textAlignment="viewStart"
+            android:textColor="#7F7F7F"
+            android:textSize="@dimen/_12sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/product_title" />
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:textColor="#00B1D8"
+            android:textSize="@dimen/_12sp"
+
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/bill_remove"
+            app:layout_constraintStart_toStartOf="@+id/bill_id"
+            app:layout_constraintTop_toBottomOf="@+id/bill_id" />
+
+        <TextView
+            android:id="@+id/bill_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/date"
+            android:textAlignment="viewStart"
+            android:textColor="#7F7F7F"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bill_date" />
+
+        <TextView
+            android:id="@+id/bill_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="start"
+            android:text="1/1/2019 "
+            android:textAlignment="viewStart"
+            android:textColor="#00B1D8"
+            android:textSize="@dimen/_12sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/bill_id"
+            app:layout_constraintStart_toStartOf="@+id/bill_id"
+            app:layout_constraintTop_toBottomOf="@+id/product_title" />
+
+
+        <TextView
+            android:id="@+id/bill_state_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start"
+            android:text="@string/status"
+            android:textAlignment="viewStart"
+            android:textColor="#7F7F7F"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bill_state" />
+
+        <TextView
+            android:id="@+id/bill_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="start"
+            android:text="@string/not_paid"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toEndOf="@+id/bill_id"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/bill_id"
+            app:layout_constraintTop_toBottomOf="@+id/bill_date" />
+
+        <ImageView
+            android:id="@+id/bill_remove"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_7sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_remove_red"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/delivery_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:text="@string/delivery"
+            android:textAlignment="viewStart"
+            android:textColor="#2A3964"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/bill_delivery"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bill_state" />
+
+        <TextView
+            android:id="@+id/bill_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="end"
+            android:text="25"
+            android:textAlignment="textEnd"
+            android:textColor="#2A3964"
+            android:textSize="@dimen/_14sp"
+
+            app:layout_constraintEnd_toStartOf="@+id/bill_remove"
+            app:layout_constraintStart_toEndOf="@+id/delivery_label"
+            app:layout_constraintTop_toBottomOf="@id/bill_state" />
+
+
+        <TextView
+            android:id="@+id/discount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:text="@string/discount"
+            android:textAlignment="viewStart"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/bill_discount"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bill_discount" />
+
+        <TextView
+            android:id="@+id/bill_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="end"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/bill_remove"
+            app:layout_constraintStart_toEndOf="@+id/discount_label"
+            app:layout_constraintTop_toBottomOf="@id/bill_delivery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="end"
+            android:text="-"
+            android:textAlignment="textEnd"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/bill_discount"
+            app:layout_constraintTop_toTopOf="@+id/bill_discount" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#2A3964"
+            app:layout_constraintEnd_toStartOf="@+id/bill_remove"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bill_discount" />
+
+        <TextView
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:text="@string/total"
+            android:textAlignment="viewStart"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/bill_total"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bill_total" />
+
+        <TextView
+            android:id="@+id/bill_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="end"
+            android:text="50"
+            android:textAlignment="textEnd"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/bill_remove"
+            app:layout_constraintStart_toEndOf="@+id/total_label"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_helper"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bill_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bill_pay" />
+
+    <TextView
+        android:id="@+id/bill_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bill_pay"
+        tools:background="@drawable/bill_paid"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:paddingStart="@dimen/_50sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_50sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/pay_now"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

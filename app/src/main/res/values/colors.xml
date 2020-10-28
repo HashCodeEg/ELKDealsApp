@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121829</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="red">#ff0000</color>
+    <color name="textcolor">#ffffff</color>
+    <color name="dialog_background">#ffffff</color>
+    <color name="dialog_name_color">#121829</color>
+    <color name="dialog_message_color">#121829</color>
+    <color name="button_text_color">#D81B60</color>
+    <color name="button_background">#CD2E3E</color>
+    <color name="username_password_background">#00000000</color>
+    <color name="hint_text_color">#C4C4C4</color>
+    <color name="name_color">#ffffff</color>
+    <color name="timer_text_color">#ffffff</color>
+    <color name="toast_color">#ffffff</color>
+    <color name="img_tint">#64000000</color>
+    <color name="text_color_dark">#121829</color>
+    <color name="button_background_clicked">#64000000</color>
+    <color name="menu_item_color">#fff</color>
+    <color name="username_password_text">#fff</color>
+    <color name="notifiaction_read">#DADADA</color>
+    <color name="notifiaction_color">#7c7c7c</color>
+    <color name="notifiaction_unread">#E91E63</color>
+    <color name="colorPrimarySecondary">#2A3964</color>
+    <color name="colorPrimaryDarkAuctions">#1E387E</color>
+    <color name="colorAccentAuctions">#DA3D74</color>
+    <color name="colorAccentRequests">#00B1D8</color>
+    <color name="colorPrimaryRequests">#1E387E</color>
+    <color name="dialog_title_color">#121829</color>
+    <color name="profile_tint">#CC121B34</color>
+    <color name="textColorSecondary">#3c3c3c</color>
+    <color name="textColorSecondaryDark">#6c6c6c</color>
+
+
+
+    <color name="notRead">#3C518A</color>
+    <color name="item_bg">#edf4f9</color>
+    <color name="item_selected_bg">#5d6266</color>
+    <color name="green">#009900</color>
+    <color name="opacityWhite">#80FFFFFF</color>
+    <color name="orange">#FF6347</color>
+    <color name="bluerdWhite">#f3f3f3</color>
+
+    <color name="progred">#D9534F</color>
+    <color name="progorange">#F0AD4E</color>
+    <color name="progblue">#5BC0DE</color>
+    <color name="progblue2">#336C7D</color>
+    <color name="proggreen">#5CB85C</color>
+    <color name="shadow">#555555</color>
+    <color name="title">#777777</color>
+
+    <color name="darkGray">#1E2B4F</color>
+    <color name="darkGray2">#303030</color>
+    <color name="Orange">#FFC800</color>
+    <color name="Orange2">#FFC800</color>
+    <color name="LightOrange">#FFC800</color>
+    <color name="newGray">#FFC800</color>
+    <color name="bluuuu">#1e2b4f</color>
+    <color name="blue">#0000ff</color>
+</resources>

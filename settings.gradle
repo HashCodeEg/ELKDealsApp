@@ -1,0 +1,2 @@
+include  ':app', ':expandablerecyclerview', ':slider', ':circleprogressview', ':ImagePicker', ':youtubeplayercore', ':store'
+rootProject.name='Elk Deals'

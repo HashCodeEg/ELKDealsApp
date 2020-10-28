@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bluerdWhite"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_3sdp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/elklogo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/daysOrPriceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="السعر "
+        android:textColor="#000"
+        android:textSize="@dimen/_17sdp" />
+    <EditText
+        android:id="@+id/aucPriceEdx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/auc_rec2"
+        android:padding="@dimen/_5sdp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="@dimen/_17sdp" />
+
+    <EditText
+        android:id="@+id/aucPriceEdxAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/auc_rec2"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:hint="تاكيد القيمة"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/_17sdp" />
+
+
+    <Button
+        android:id="@+id/bidBtn"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_weight="1"
+        android:background="@drawable/auc_rec2"
+        android:text="ارسال"
+        android:textColor="#fff"
+        android:textSize="@dimen/_16sdp" />
+
+
+</LinearLayout>

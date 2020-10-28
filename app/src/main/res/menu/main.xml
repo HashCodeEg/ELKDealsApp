@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/ic_notification"
+        android:icon="@drawable/toggle_ic_notification"
+        android:title="@string/name_activity_notifications"
+        app:showAsAction="always" />
+    <!--android:actionLayout="@layout/menu_notification"-->
+    <item
+        android:id="@+id/ic_cart"
+        android:icon="@drawable/toggle_ic_cart"
+        android:title="@string/cart"
+        app:showAsAction="always" />
+    <!--android:actionLayout="@layout/menu_cart"-->
+</menu>

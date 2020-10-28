@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.requests.Requests"
+    android:orientation="vertical"
+    android:gravity="top">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/choose_category"
+        android:textColor="@color/colorPrimaryDarkAuctions"
+        android:textSize="@dimen/_14sp"
+        android:layout_gravity="top|center_vertical"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="#7c7c7c"
+        android:layout_gravity="top|center_vertical"/>
+    <TextView
+        android:id="@+id/reload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawableTop="@android:drawable/ic_menu_rotate"
+        android:text="@string/reload"
+        android:textSize="@dimen/_18sp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/colorPrimarySecondary"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="visible"
+        android:visibility="gone">
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/_4sdp"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/_18sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            tools:itemCount="120"
+            tools:listitem="@layout/recycler_category_title" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sell_with_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:background="@color/colorPrimaryRequests"
+                android:text="@string/sell_with_us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sp" />
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:background="@color/colorPrimaryRequests"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="طلبات العملاء"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sp"
+                tools:visibility="visible"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/myrequests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:background="@color/colorPrimaryRequests"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/my_requests"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sp"
+                android:visibility="visible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

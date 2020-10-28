@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">http://www.elkdeals.com</domain>
+<!--        <domain includeSubdomains="true">http://176.31.75.69:7001/</domain>-->
+        <domain includeSubdomains="true">176.31.75.69</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">http://hashcodegroup.com</domain>
+<!--        <domain includeSubdomains="true">http://hashcodegroup.com/elkdeals</domain>-->
+    </domain-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

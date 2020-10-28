@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="fragments.auctions.BillDetails">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="7">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarySecondary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/city"
+                        android:textSize="@dimen/_14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        android:background="@drawable/ic_rectangle_bottom_line"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/city"
+                        android:textColor="@color/colorPrimarySecondary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarySecondary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/address"
+                        android:textSize="@dimen/_14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        android:background="@drawable/ic_rectangle_bottom_line"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/address"
+                        android:textColor="@color/colorPrimarySecondary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarySecondary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/bill_status"
+                        android:textSize="@dimen/_14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bill_status"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        android:background="@drawable/ic_rectangle_bottom_line"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/city"
+                        android:textColor="@color/colorPrimarySecondary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarySecondary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/method"
+                        android:textSize="@dimen/_14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/method"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        android:background="@drawable/ic_rectangle_bottom_line"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/method"
+                        android:textColor="@color/colorPrimarySecondary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarySecondary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/bank"
+                        android:textSize="@dimen/_14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bank"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        android:background="@drawable/ic_rectangle_bottom_line"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/bank"
+                        android:textColor="@color/colorPrimarySecondary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarySecondary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/bank_branch"
+                        android:textSize="@dimen/_14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bank_branch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        android:background="@drawable/ic_rectangle_bottom_line"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/bank_branch"
+                        android:textColor="@color/colorPrimarySecondary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimarySecondary"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/account_number"
+                        android:textSize="@dimen/_14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bank_account_number"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        android:background="@drawable/ic_rectangle_bottom_line"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/account_number"
+                        android:textColor="@color/colorPrimarySecondary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/_4sdp"
+                tools:itemCount="12"
+                tools:listitem="@layout/recycler_bill_pay" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="@dimen/_10sdp">
+
+        <View
+            android:id="@+id/shadow_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="#E91E43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sub_total_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/sub_total"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shadow_divider" />
+
+        <TextView
+            android:id="@+id/sub_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:text="80"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/sub_total_price_label"
+            app:layout_constraintTop_toTopOf="@+id/sub_total_price_label" />
+
+        <TextView
+            android:id="@+id/shipping_fees_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/shipping_fees"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub_total_price_label" />
+
+        <TextView
+            android:id="@+id/shipping_fees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/shipping_fees_label" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toStartOf="@+id/sub_total_price"
+            app:layout_constraintTop_toTopOf="@id/shipping_fees_label" />
+        <TextView
+            android:id="@+id/discount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/discount"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shipping_fees_label" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:text="10"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/discount_label" />
+
+        <TextView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/_8sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="-"
+            android:textColor="#28CE57"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toStartOf="@+id/sub_total_price"
+            app:layout_constraintTop_toTopOf="@id/discount_label" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="#E91E43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discount_label" />
+
+        <TextView
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:fontFamily="sans-serif-black"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:fontFamily="sans-serif-black"
+            android:padding="@dimen/_8sdp"
+            android:text="90"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/total_label" />
+
+        <TextView
+            android:id="@+id/bill_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E91E43"
+            android:fontFamily="sans-serif-black"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/pay"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Elk Deals.iml" filepath="$PROJECT_DIR$/Elk Deals.iml" group="Elk Deals" />
+      <module fileurl="file://$PROJECT_DIR$/ImagePicker/ImagePicker.iml" filepath="$PROJECT_DIR$/ImagePicker/ImagePicker.iml" group="Elk Deals/ImagePicker" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Elk Deals/app" />
+      <module fileurl="file://$PROJECT_DIR$/circleprogressview/circleprogressview.iml" filepath="$PROJECT_DIR$/circleprogressview/circleprogressview.iml" group="Elk Deals/circleprogressview" />
+      <module fileurl="file://$PROJECT_DIR$/expandablerecyclerview/expandablerecyclerview.iml" filepath="$PROJECT_DIR$/expandablerecyclerview/expandablerecyclerview.iml" group="Elk Deals/expandablerecyclerview" />
+      <module fileurl="file://$PROJECT_DIR$/slider/slider.iml" filepath="$PROJECT_DIR$/slider/slider.iml" group="Elk Deals/slider" />
+      <module fileurl="file://$PROJECT_DIR$/store/store.iml" filepath="$PROJECT_DIR$/store/store.iml" group="Elk Deals/store" />
+      <module fileurl="file://$PROJECT_DIR$/youtubeplayercore/youtubeplayercore.iml" filepath="$PROJECT_DIR$/youtubeplayercore/youtubeplayercore.iml" group="Elk Deals/youtubeplayercore" />
+    </modules>
+  </component>
+</project>
